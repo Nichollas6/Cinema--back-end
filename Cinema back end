@@ -1,0 +1,150 @@
+<?php
+classe cinema{
+  private $filme;
+  private $sala;
+  private $assento;
+
+  private fuction getFilme () {
+  return $this->filme;
+  }
+
+  private fuction setFilme ($filme){
+    $this->filme = $filme;
+  }
+  
+  private fuction getSala () {
+  return $this->sala;
+  }
+
+  private fuction setSala ($sala){
+    $this->sala = $sala;
+  }
+
+  private fuction getAssento () {
+  return $this->assento;
+  }
+
+  private fuction setAssento ($assento){
+    $this->assento = $assento;
+  }
+}
+    
+  class Sala extends Cinema {}
+
+classe cliente{
+  private $nome;
+  private $idade;
+  private $login;
+  private $cpf;
+
+
+  private fuction getNome () {
+  return $this->nome;
+  }
+
+  private fuction setNome ($nome){
+    $this->nome = $nome;
+  }
+  
+  private fuction getIdade () {
+  return $this->idade;
+  }
+
+  private fuction setIdade ($idade){
+    $this->idade = $idade;
+  }
+
+  private fuction getLogin () {
+  return $this->login;
+  }
+
+  private fuction setLogin ($login){
+    $this->login = $login;
+  }
+
+  private fuction getCpf () {
+  return $this->cpf;
+  }
+
+  private fuction setCpf ($cpf){
+    $this->cpf = $cpf;
+  }
+
+}
+
+  class Cliente extends Sala {}
+  class Cliente extends Cinema {}
+
+classe ingresso{
+  private $sala;
+  private $filme;
+  private $valor;
+  private $forma_de_pagamento;
+
+
+  private fuction getSala () {
+  return $this->sala;
+  }
+
+  private fuction setSala ($sala){
+    $this->sala = $sala;
+  }
+  
+  private fuction getFilme () {
+  return $this->filme;
+  }
+
+  private fuction setFilme ($filme){
+    $this->filme = $filme;
+  }
+
+  private fuction getValor () {
+  return $this->valor;
+  }
+
+  private fuction setValor ($valor){
+    $this->valor = $valor;
+  }
+
+  private fuction getForma_de_pagamento () {
+  return $this->forma_de_pagamento;
+  }
+
+  private fuction setForma_de_pagamento ($forma_de_pagamento){
+    $this->forma_de_pagamento = $forma_de_pagamento;
+  }
+}
+
+  class Ingresso extends Cinema {}
+  class Ingresso extends Sala {}
+
+classe sala{
+  public $horario;
+  public $filme;
+  public $cadeiras;
+
+
+  public fuction getHorario () {
+  return $this->horario;
+  }
+
+  public fuction setHorario ($horario){
+    $this->horario = $horario;
+  }
+  
+  public fuction getFilme () {
+  return $this->filme;
+  }
+
+  public fuction setFilme ($filme){
+    $this->filme = $filme;
+  }
+
+  public fuction getCadeiras () {
+  return $this->cadeiras;
+  }
+
+  public fuction setCadeiras ($cadeiras){
+    $this->cadeiras = $cadeiras;
+  }
+}
